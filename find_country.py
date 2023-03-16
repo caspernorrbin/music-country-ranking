@@ -9,7 +9,7 @@ def find_country(lat, long, map = None):
     if map:
         gjs = map
     else:
-        with open('world-administrative-boundaries.geojson') as f:
+        with open('geojson/world-administrative-boundaries.geojson') as f:
             gjs = json.load(f)
 
     # Construct point based on lon/lat returned by geocoder
